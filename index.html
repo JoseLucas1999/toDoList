@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assents/css/style.css">
+    <script src="assents/js/script.js" defer></script>
+    <title>to Do List</title>
+</head>
+<body>
+
+    <!-- conteiner -->
+    <div class="todo-container">
+        <!-- cabeçalho -->
+        <header>
+            <h1>toDo List</h1>
+        </header>
+        <!-- fim de cabeçalho -->
+
+        <!-- adicionar tarefa -->
+        <form id="todo-form">
+            <p>Adicione uma Tarefa</p>
+            <div class="form-control">
+                <input id="todo-input" type="text" placeholder="Adicione uma terefa">
+                <button type="submit"><i class="fa-thin fa-plus"></i></button>
+            </div>
+            <div class="msg-alert"><p id="demo"></p></div>
+        </form>
+        <!-- fim de adicionar tarefa -->    
+
+        <!-- editar tarefa -->
+        <form id="edit-form" class="hide">
+            <p>Edite sua Tarefa</p>
+            <div class="form-control">
+                <input id="edit-input" type="text" placeholder="Buscar...">
+                <button><i class="fa-solid fa-check-double"></i></button>
+            </div>
+            <button id="cancel-edit">Cancelar</button>
+        </form>
+        <!-- fim de editar tarefa-->
+
+        <!-- barra de ferramentas -->
+        <div id="toolbar">
+            <!-- pesquisar -->
+            <div id="search">
+                <h4>Pesquisar</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                    <button id="erase-button"><i class="fa-solid fa-delete-left"></i></button>
+                </form>
+            </div>
+            <!-- fim de pesquisar -->
+            <!-- filtrar -->
+            <div id="filter">
+                <h4>Filtrar</h4>
+                <select id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
+            <!-- fim de filtrar -->
+        </div>
+        <!-- fim de barra de ferramentas -->
+
+        <!-- tarefas - essa classe pode ser excluida aqui, ela será criada no js-->
+        <div id="todo-list">
+            <div class="todo">
+                <h3>estou fazendo alguma coisa</h3>
+                <button class="finish-todo"><i class="fa-solid fa-check"></i></button>
+                <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
+                <button class="remove-todo"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <!-- fim de tarefas -->
+
+    </div>
+    <!-- fim de conteiner -->
+    
+   
+</body>
+</html>
